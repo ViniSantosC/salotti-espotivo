@@ -1,0 +1,257 @@
+:root {
+  --verde: #b8ff00;
+  --roxo: #170529;
+  --roxo-secundario: #25083f;
+  --preto: #0d0715;
+  --branco: #ffffff;
+  --cinza: #d4d0d8;
+}
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #0e001b;
+  display: flex;
+  justify-content: space-between;
+  font-family: "poppins", Helvetica, sans-serif;
+}
+header IMG {
+  height: 100px;
+}
+main {
+  background-color: #170529;
+}
+.flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: var(--branco);
+  gap: 1rem;
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+.flex img {
+  height: 40%;
+}
+.dest {
+  width: 30%;
+}
+.flex3 {
+  display: flex;
+  justify-content: space-around;
+}
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.parte1 {
+  display: flex;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.container-imagem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  border-radius: 1rem;
+}
+.container-imagem {
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+  max-width: 70%;
+  margin: 1rem;
+
+  transition: all 0.3s ease;
+}
+.container-imagem:hover {
+  transform: scale(1.1);
+  transform: translateY(-5px);
+}
+.texto-por-cima {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--cinza);
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  width: 90%;
+  font-family: "poppins", Helvetica, sans-serif;
+
+  span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+  }
+}
+
+.camada-escura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.camada-escura:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.parte2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  max-width: 100%;
+  padding: 1rem;
+
+  h1 {
+    color: var(--cinza);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+}
+.caixa {
+  height: 400px;
+}
+
+.parte2 img {
+  height: 60%;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.parte2 img:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+.titulo2 {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  color: var(--branco);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3rem;
+}
+.parte3 {
+  padding: 1rem;
+  display: flex;
+}
+.flex2 {
+  margin: 1rem auto;
+  img {
+    height: 200px;
+    border-radius: 1rem;
+  }
+  display: flex;
+  justify-content: space-around;
+}
+.parte4 {
+  padding: 1rem;
+  background-color: #0d0715;
+}
+.parte4 h1 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  color: var(--branco);
+  margin: 1rem auto;
+}
+.icons {
+  display: flex;
+  margin: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+.esquerda img {
+  height: 100px;
+  border-radius: 1rem;
+}
+
+.icons h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--cinza);
+  font-size: 1rem;
+}
+.hom {
+  padding: 1rem;
+  text-align: center;
+  img {
+    height: 500px;
+    border-radius: 1rem;
+  }
+  h1 {
+    margin: 1rem auto;
+    font-family: "Bebas Neue", sans-serif;
+    color: #f5f5f5;
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+  span {
+       color: #A8FF00;
+  }
+  h4 {
+        font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+  }
+   p{
+      font-family: 'Poppins', sans-serif;
+    color: #D8D8D8;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.flex4 {
+  justify-content: space-around;
+  display: flex;
+}
+.flex5 {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+  img {
+    height: 300px;
+    border-radius: 1rem;
+  }
+
+  video {
+    height: 300px;
+    border-radius: 1rem;
+  }
+  h4 {
+    margin: 1rem auto;
+    
+  }
+
+ 
+  
+}
+.flex6 button {
+  background-color: #25083f;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+   font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
