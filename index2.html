@@ -24,49 +24,49 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="parte1">
-        <div class="container-imagem">
+        <div class="container-imagem" data-imagem="supere">
           <img src="img/atlet/inicial.jpg" alt="Imagem de Fundo" />
 
-          <div class="camada-escura"></div>
+          <div class="camada-escura" data-imagem="supere"></div>
           <h2 class="texto-por-cima">
             <span>SUPERE SEUS LIMITES</span><br />
             Cada passo é uma conquista.
           </h2>
         </div>
         <div class="fotos">
-          <div class="container-imagem">
+          <div class="container-imagem" data-imagem="aprenda">
             <img src="img/dama/inicial.jpg" alt="Imagem de Fundo" />
 
-            <div class="camada-escura"></div>
+            <div class="camada-escura" data-imagem="aprenda"></div>
             <h2 class="texto-por-cima">
               <span>APRENDA E EVOLUA</span><br />
               Conhecimento também é força.
             </h2>
           </div>
-          <div class="container-imagem">
+          <div class="container-imagem" data-imagem="jogue">
             <img src="img/had fem/inicial.jpg" alt="Imagem de Fundo" />
 
-            <div class="camada-escura"></div>
+            <div class="camada-escura" data-imagem="jogue"></div>
             <h2 class="texto-por-cima">
               <span>JOGUE COM RAÇA</span><br />
               A união faz a diferença.
             </h2>
           </div>
-          <div class="container-imagem">
+          <div class="container-imagem" data-imagem="acredite">
             <img src="img/basc fem/inicial.jpg" alt="Imagem de Fundo" />
 
-            <div class="camada-escura"></div>
+            <div class="camada-escura" data-imagem="acredite"></div>
             <h2 class="texto-por-cima">
               <span>ACREDITE NO SEU JOGO</span><br />
               Arrisque, tente, conquiste.
             </h2>
           </div>
-          <div class="container-imagem">
+          <div class="container-imagem" data-imagem="juntos">
             <img src="img/fut fem/incial.jpg" alt="Imagem de Fundo" />
 
-            <div class="camada-escura"></div>
+            <div class="camada-escura" data-imagem="juntos"></div>
             <h2 class="texto-por-cima">
               <span>JUNTOS SOMOS MAIS FORTES</span><br />
               Cada ponto começa com união.
@@ -77,19 +77,19 @@
       <h1 class="titulo2">melhores momentos</h1>
       <section >
         <div class="parte2">
-        <div class="caixa">
+        <div class="caixa" data-imagem="quadra">
           <img src="img/basc fem/inicial3.jpg" alt="" />
           <h1>EM QUADRA, SOMOS UM</h1>
         </div>
-        <div class="caixa">
+        <div class="caixa" data-imagem="estrategia">
           <img src="img/dama/inicial3.jpg" alt="" />
           <h1>ESTRATÉGIA QUE VENCE</h1>
         </div>
-        <div class="caixa">
+        <div class="caixa" data-imagem="paixao">
           <img src="img/fut fem/inicial3.jpg" alt="" />
           <h1>PAIXÃO EM CAMPO</h1>
         </div>
-        <div class="caixa">
+        <div class="caixa" data-imagem="lance">
           <img src="img/fut masc/inicial3.jpg" alt="" />
           <h1>ATÉ O ÚLTIMO LANCE</h1>
         </div>
@@ -137,24 +137,24 @@
       </section>
       <section class="parte4">
          <h1>Últimas notícias</h1>
-        <div class="flex3">
+        <div class="flex3" >
           <div><h1>oloko mvp da partida</h1>
           <p>mano mano mano mano</p></div>
-          <img class="dest" src="img/dama/SaveClip.App_669693748_18579337264022687_4136500990697885107_n.jpg" alt="">
+          <img  class="dest" src="img/dama/SaveClip.App_669693748_18579337264022687_4136500990697885107_n.jpg" alt="">
         </div>
         <div class="flex2">
-          <div>
-            <img src="img/dama/SaveClip.App_655576236_18077770130118560_1090798025357523314_n.jpg" alt=""> <h1>mvpm</h1>
+          <div data-imagem="MVP">
+            <img src="img/dama/SaveClip.App_655576236_18077770130118560_1090798025357523314_n.jpg" alt="" > <h1 data-imagem="MVP">mvpm</h1>
           </div>
-           <div>
-            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt=""> <h1>mvpm</h1>
+          <div data-imagem="MVP2">
+            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt="" > <h1 data-imagem="MVP2">mvpm</h1>
           </div>
           
-          <div>
-            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt=""> <h1>mvpm</h1>
+          <div data-imagem="MVP3">
+            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt="" > <h1 data-imagem="MVP3">mvpm</h1>
           </div>
-          <div>
-            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt=""> <h1>mvpm</h1>
+          <div data-imagem="MVP4">
+            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt="" > <h1 data-imagem="MVP4">mvpm</h1>
           </div>
 
          
@@ -188,6 +188,17 @@
     </main>
 
     <footer></footer>
+     <div id="modal" class="modal-conteiner" >
+      <div class="modal1">
+        <button class="fechar" id="fechar">X</button>
+        <img src="" alt="" id="modal-img" width="20%" height="20%">
+
+        <h1 id="titulo"></h1>
+        <p id="texto"></p>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
