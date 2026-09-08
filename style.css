@@ -188,6 +188,7 @@ background: linear-gradient(
 .parte3 {
   padding: 1rem;
   display: flex;
+  justify-content: space-between;
 }
 .flex2 {
   margin: 1rem auto;
@@ -328,7 +329,7 @@ background: linear-gradient(
 .ti {
     font-family: "Bebas Neue", sans-serif;
   color: var(--cinza);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 #sub {
 font-size: 1rem;
@@ -337,7 +338,7 @@ font-weight: 600;
 font-family: "poppins", Helvetica, sans-serif;
 }
 .su {
-    font-size: 1rem;
+    font-size: 1.5rem;
 color: var(--cinza);
 margin: 1rem;
 text-align: center;
@@ -402,7 +403,7 @@ font-style: italic;
 
 
 .modal1 img {
-  height: 400px;
+  height: 600px;
   border-radius: 1rem;
 }
 .direito {
@@ -465,7 +466,7 @@ font-style: italic;
   .parte1 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0.5rem;
   }
 
@@ -529,7 +530,7 @@ font-style: italic;
 
   .flex2 {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .flex4 {
@@ -595,7 +596,9 @@ font-style: italic;
     grid-template-columns: 1fr;
     padding: 0.75rem;
   }
-
+.flex6 {
+  gap: 2rem;
+}
   .parte2 .caixa h1 {
     font-size: 1.5rem;
   }
