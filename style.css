@@ -15,12 +15,31 @@
 header {
   background-color: #0e001b;
   display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: space-between;
   font-family: "poppins", Helvetica, sans-serif;
 }
 header IMG {
   height: 100px;
 }
+.ginastica-entry {
+  color: var(--verde);
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 1rem;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.ginastica-entry:hover {
+  color: var(--branco);
+  transform: translateY(-2px);
+}
+.ginastica-entry span { font-size: 1rem; }
 main {
   background-color: #170529;
 }
@@ -44,7 +63,7 @@ body::-webkit-scrollbar{
   height: 40%;
 }
 .dest {
-  width: 35%;
+  width: 40%;
    transition: opacity 0.3s ease-in-out, transform 0.4s ease;
        border: 3px solid #ffcc00; 
      
@@ -338,7 +357,7 @@ font-weight: 600;
 font-family: "poppins", Helvetica, sans-serif;
 }
 .su {
-    font-size: 1.5rem;
+    font-size: 1rem;
 color: var(--cinza);
 margin: 1rem;
 text-align: center;
