@@ -134,28 +134,134 @@
       <section class="parte4">
          <h1>Últimas notícias</h1>
         <div class="flex3" >
-          <div><h1 class="ti">RUMO A PRAIA GRANDE: A SAGA DO GOLDEN CHECKS NO IBIRAPUERA!</h1>
-          <p class="su">Mais do que uma simples vitória, essa foto eterniza o momento em que o trabalho duro se transformou em história. No lendário palco do Ibirapuera, o time Golden Checks de 2024, sob a liderança firme do capitão Marcos, deu uma aula de garra, união e autêntico espírito esportivo. <br>
-
-Entre jogadas incríveis e uma sintonia impecável, o destaque e carisma do jogador Vinicanto contagiaram a todos, tornando a caminhada ainda mais inesquecível. Cada integrante desse grupo provou seu valor individual, mas o verdadeiro diferencial foi a conexão entre eles: antes de serem grandes atletas, o Golden Checks é uma verdadeira família dentro e fora das disputas. <br>
-
-Com essa vitória marcante no Ibirapuera, a equipe carimbou o passaporte com a tão sonhada classificação para Praia Grande, levando o nome da escola ao topo e mostrando que, quando jogam juntos, não há desafio que não possam superar!</p></div>
-          <img  class="dest" src="img/dama/SaveClip.App_662142718_18574552876035328_3183123981456331913_n.jpg.webp" alt="">
-        </div>
-        <div class="flex2">
-          <div data-imagem="MVP">
-            <img src="img/dama/SaveClip.App_655576236_18077770130118560_1090798025357523314_n.jpg" alt="" > <h1 data-imagem="MVP">mvpm</h1>
+          <div><h1 class="ti">Entrevistas exclusivas no Salotti Esportivo.</h1>
+          <p class="su">O que acontece com o corpo e a mente quando decidimos nos mover de verdade? Fomos às ruas (ou ao estúdio) entender a essência da ginástica e do movimento humano. Neste vídeo especial do Salotti Esportivo, conversamos com especialistas e praticantes para descobrir como pequenos gestos mudam a nossa rotina. Aperte o play e venha se inspirar!</p>
+          <div class="flex2">
+          <div data-imagem="video1">
+           <div class="vertical-video-container">
+  <video controls  muted loop >
+    <source src="img/VID-20260909-WA0017.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+  
+</div>
           </div>
-          <div data-imagem="MVP2">
-            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt="" > <h1 data-imagem="MVP2">mvpm</h1>
+          <div data-imagem="video2">
+           <div class="vertical-video-container">
+  <video controls muted loop >
+    <source src="img/VID-20260909-WA0020.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+</div>
           </div>
           
-          <div data-imagem="MVP3">
-            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt="" > <h1 data-imagem="MVP3">mvpm</h1>
+         
+        </div>
           </div>
-          <div data-imagem="MVP4">
-            <img src="img/dama/SaveClip.App_654304096_18095747705291868_6926572022814838030_n.jpg.webp" alt="" > <h1 data-imagem="MVP4">mvpm</h1>
-          </div>
+        
+        
+    <div class="video-container-vertical">
+  <video id="meuVideoVertical" poster="img/logo.png" playsinline>
+    <source src="img/VID-20260909-WA0018.mp4" type="video/mp4">
+    Seu navegador não suporta este vídeo.
+  </video>
+  
+  <!-- Botão de Player Personalizado -->
+  <button class="botao-play" onclick="controlarVideo()">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Estilos CSS (Adicione ao seu arquivo .css ou entre as tags <style>) -->
+<style>
+  /* Container que segura o vídeo e o botão */
+  .video-container-vertical {
+    position: relative;
+    width: 100%;
+    max-width: 460px; /* Ajuste o tamanho máximo para alinhar com o seu layout */
+    aspect-ratio: 9 / 16; /* Força a proporção vertical exata */
+    margin: 0 auto;
+    
+    /* Borda estilizada para combinar com o layout escuro */
+    border: 3px solid #ffffff; /* Altere a cor (ex: #ffffff ou #00ff00) ou a espessura aqui */
+    border-radius: 12px; /* Cantos arredondados modernos */
+    overflow: hidden; /* Garante que o vídeo não saia da borda arredondada */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+  }
+
+  /* Garante que o vídeo preencha o container corretamente */
+  .video-container-vertical video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo preencher o espaço sem distorcer */
+    display: block;
+  }
+
+  /* Estilização do Botão de Play Centralizado */
+  .botao-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px); /* Efeito de vidro borrado */
+    z-index: 10;
+  }
+
+  /* Ícone de triângulo dentro do botão */
+  .botao-play svg {
+    width: 35px;
+    height: 35px;
+    fill: #ffffff;
+    margin-left: 5px; /* Ajuste óptico para centralizar o triângulo */
+  }
+
+  /* Efeito de hover ao passar o mouse */
+  .botao-play:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  /* Esconde o botão dinamicamente quando o vídeo estiver tocando */
+  .video-container-vertical.tocando .botao-play {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+</style>
+
+<!-- Script para fazer o botão funcionar -->
+<script>
+  function controlarVideo() {
+    const video = document.getElementById('meuVideoVertical');
+    const container = document.querySelector('.video-container-vertical');
+    
+    if (video.paused) {
+      video.play();
+      container.classList.add('tocando');
+    }
+  }
+
+  // Se o usuário clicar no vídeo enquanto ele toca, ele pausa e o botão reaparece
+  document.getElementById('meuVideoVertical').addEventListener('click', function() {
+    if (!this.paused) {
+      this.pause();
+      document.querySelector('.video-container-vertical').classList.remove('tocando');
+    }
+  });
+</script>
+        
 
          
       
@@ -199,6 +305,21 @@ Com essa vitória marcante no Ibirapuera, a equipe carimbou o passaporte com a t
           <h2 id="sub"></h2>
           <p id="descricao"></p>
         <p id="texto"></p></div>
+       
+
+      </div>
+    </div>
+      <div id="modal2" class="modal-conteiner" >
+      <div class="modal1">
+        <button class="fechar" id="fechar2">X</button>
+        <div>
+        <div id="modal-img2"></div>
+        <p class="direito">Fotos encontradas no perfil oficial da Escola ou Grêmio</p>
+        </div>
+         <div> <h1 id="titulo2"></h1>
+          <h2 id="sub2"></h2>
+          <p id="descricao2"></p>
+        <p id="texto2"></p></div>
        
 
       </div>

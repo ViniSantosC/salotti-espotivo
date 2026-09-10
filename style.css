@@ -82,6 +82,8 @@ body::-webkit-scrollbar{
 .flex3 {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  align-items: center;
 }
 .fotos {
   display: grid;
@@ -210,7 +212,7 @@ background: linear-gradient(
   justify-content: space-between;
 }
 .flex2 {
-  margin: 1rem auto;
+  margin: 3rem auto;
   img {
     height: 200px;
     border-radius: 1rem;
@@ -419,6 +421,7 @@ font-style: italic;
 
   transform: translateY(0);
 }
+
 
 
 .modal1 img {
