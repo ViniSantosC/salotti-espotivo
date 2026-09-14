@@ -137,43 +137,42 @@
           <div><h1 class="ti">Entrevistas exclusivas no Salotti Esportivo.</h1>
           <p class="su">O que acontece com o corpo e a mente quando decidimos nos mover de verdade? Fomos às ruas (ou ao estúdio) entender a essência da ginástica e do movimento humano. Neste vídeo especial do Salotti Esportivo, conversamos com especialistas e praticantes para descobrir como pequenos gestos mudam a nossa rotina. Aperte o play e venha se inspirar!</p>
           <div class="flex2">
-          <div data-imagem="video1">
-           <div class="vertical-video-container">
-  <video controls  muted loop >
+
+
+<div>
+  <h1 class="videot">teatro</h1>
+<div class="video-container-vertical">
+  
+  <video poster="img/logo.png" playsinline>
     <source src="img/VID-20260909-WA0017.mp4" type="video/mp4">
-    Seu navegador não suporta a tag de vídeo.
+    Seu navegador não suporta este vídeo.
   </video>
   
+  <button class="botao-play">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </button>
 </div>
-          </div>
-          <div data-imagem="video2">
-           <div class="vertical-video-container">
-  <video controls muted loop >
-    <source src="img/VID-20260909-WA0020.mp4" type="video/mp4">
-    Seu navegador não suporta a tag de vídeo.
-  </video>
 </div>
-          </div>
-          
-         
-        </div>
-          </div>
-        
-        
-    <div class="video-container-vertical">
-  <video id="meuVideoVertical" poster="img/logo.png" playsinline>
+<!-- Segundo Vídeo -->
+ 
+<div>
+  <h1 class="videot">entrevista</h1>
+<div class="video-container-vertical">
+  <video poster="img/logo.png" playsinline>
     <source src="img/VID-20260909-WA0018.mp4" type="video/mp4">
     Seu navegador não suporta este vídeo.
   </video>
   
-  <!-- Botão de Player Personalizado -->
-  <button class="botao-play" onclick="controlarVideo()">
+  <button class="botao-play">
     <svg viewBox="0 0 24 24" fill="currentColor">
       <path d="M8 5v14l11-7z"/>
     </svg>
   </button>
 </div>
 
+</div>
 <!-- Estilos CSS (Adicione ao seu arquivo .css ou entre as tags <style>) -->
 <style>
   /* Container que segura o vídeo e o botão */
@@ -241,24 +240,42 @@
   }
 </style>
 
-<!-- Script para fazer o botão funcionar -->
-<script>
-  function controlarVideo() {
-    const video = document.getElementById('meuVideoVertical');
-    const container = document.querySelector('.video-container-vertical');
-    
-    if (video.paused) {
-      video.play();
-      container.classList.add('tocando');
-    }
-  }
 
-  // Se o usuário clicar no vídeo enquanto ele toca, ele pausa e o botão reaparece
-  document.getElementById('meuVideoVertical').addEventListener('click', function() {
-    if (!this.paused) {
-      this.pause();
-      document.querySelector('.video-container-vertical').classList.remove('tocando');
+<!-- Script Atualizado -->
+<script>
+  document.querySelectorAll('.video-container-vertical').forEach(container => {
+    const video = container.querySelector('video');
+    const botaoPlay = container.querySelector('.botao-play');
+
+    // Função para dar Play/Pause
+    function alternarPlay() {
+      if (video.paused) {
+        // Opcional: Pausa outros vídeos tocando na página antes de dar play
+        document.querySelectorAll('video').forEach(v => {
+          if (v !== video) {
+            v.pause();
+            v.parentElement.classList.remove('tocando');
+          }
+        });
+
+        video.play();
+        container.classList.add('tocando');
+      } else {
+        video.pause();
+        container.classList.remove('tocando');
+      }
     }
+
+    // Clique no botão de Play
+    botaoPlay.addEventListener('click', alternarPlay);
+
+    // Clique no próprio vídeo (para pausar)
+    video.addEventListener('click', alternarPlay);
+
+    // Garante que se o vídeo terminar, o botão reaparece
+    video.addEventListener('ended', () => {
+      container.classList.remove('tocando');
+    });
   });
 </script>
         
