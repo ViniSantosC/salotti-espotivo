@@ -166,7 +166,7 @@ main.addEventListener("click", (event) => {
             "Antes da competição, o trabalho começa no aquecimento.";
           descricao2.innerHTML =
             "Em 2024, alunos do Salotti participaram dos JEEPS e de competições entre escolas, passando por seletivas e preparação antes de entrar em disputa.";
-          modal-img.innerHTML = "";
+          imagemModal2.innerHTML = ""; // Corrigido de 'modal-img.innerHTML' para 'imagemModal2.innerHTML'
           texto2.innerHTML = "texto video";
           modal2.classList.add("aparece");
         }

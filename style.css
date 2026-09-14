@@ -422,7 +422,9 @@ font-style: italic;
   transform: translateY(0);
 }
 
-
+.flex2 {
+  display: flex;
+}
 
 .modal1 img {
   height: 600px;
