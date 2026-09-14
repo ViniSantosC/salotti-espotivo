@@ -184,6 +184,13 @@ background: linear-gradient(
     margin-top: 0.5rem;
   }
 }
+.videot{
+   color: var(--cinza);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
 .caixa {
   height: 400px;
   align-items: center;
